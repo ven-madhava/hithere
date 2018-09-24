@@ -16,6 +16,9 @@ from flask_restful import Resource, Api, reqparse
 from json import dumps
 from flask_jsonpify import jsonify
 
+# v2 checking for checking commit
+# -------------------------------
+
 # Main class
 # ----------
 class printhellothere(Resource):
@@ -29,7 +32,7 @@ class printhellothere(Resource):
         parser.add_argument('age')
         args = parser.parse_args()
 
-        output_message = 'Hi, ' + str(args['name']) + ', how are you doing at ' + str(int(args['age'])) + ' xx'
+        output_message = 'Hi ' + str(args['name']) + ', how are you doing at ' + str(int(args['age'])) + '! End of my message...'
         output = {'msgid':msid, 'output_message': output_message}
 
         return output, 200
