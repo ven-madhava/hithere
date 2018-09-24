@@ -1,14 +1,4 @@
-import numpy as np
-import cv2
-import random
-import copy
-import math
-from PIL import Image
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-import os
-import h5py
-
+# Removed unnecessary imports
 # Necessary Flask imports
 # -----------------------
 from flask import Flask, request
